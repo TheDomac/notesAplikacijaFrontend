@@ -6,7 +6,7 @@ import { Elements, StripeProvider } from "react-stripe-elements";
 import BillingForm from "../components/BillingForm";
 import "./Settings.css";
 import { onError } from "../libs/errorLib";
-import config from "../config";
+import consts from "../consts";
 
 export default function Settings() {
   const history = useHistory();
@@ -15,7 +15,7 @@ export default function Settings() {
   const [stripe, setStripe] = useState(null);
 
   useEffect(() => {
-    setStripe(window.Stripe(config.STRIPE_KEY));
+    setStripe(window.Stripe(consts.STRIPE_KEY));
   }, []);
 
   function billUser(details) {

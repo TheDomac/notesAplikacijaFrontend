@@ -10,10 +10,14 @@ import Signup from "./containers/Signup";
 import NewNote from "./containers/NewNote";
 import Notes from "./containers/Notes";
 import Settings from "./containers/Settings";
+import Home from "./containers/Home";
 
 export default function Routes() {
   return (
     <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
       <UnauthenticatedRoute exact path="/login">
         <Login />
       </UnauthenticatedRoute>
