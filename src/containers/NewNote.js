@@ -6,7 +6,7 @@ import { API } from "aws-amplify";
 import LoaderButton from "../components/LoaderButton";
 import { onError } from "../libs/errorLib";
 import { s3Upload } from "../libs/awsLib";
-import consts from "../consts";
+import config from "../config";
 import "./NewNote.css";
 
 export default function NewNote() {
@@ -26,10 +26,10 @@ export default function NewNote() {
   async function handleSubmit(event) {
     event.preventDefault();
   
-    if (file.current && file.current.size > consts.MAX_ATTACHMENT_SIZE) {
+    if (file.current && file.current.size > config.MAX_ATTACHMENT_SIZE) {
       alert(
         `Please pick a file smaller than ${
-          consts.MAX_ATTACHMENT_SIZE / 1000000
+          config.MAX_ATTACHMENT_SIZE / 1000000
         } MB.`
       );
       return;

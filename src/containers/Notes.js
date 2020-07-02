@@ -6,7 +6,7 @@ import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import { onError } from "../libs/errorLib";
 import { s3Upload } from "../libs/awsLib";
 import LoaderButton from "../components/LoaderButton";
-import consts from "../consts";
+import config from "../config";
 import "./Notes.css";
 
 export default function Notes() {
@@ -65,10 +65,10 @@ export default function Notes() {
   
     event.preventDefault();
   
-    if (file.current && file.current.size > consts.MAX_ATTACHMENT_SIZE) {
+    if (file.current && file.current.size > config.MAX_ATTACHMENT_SIZE) {
       alert(
         `Please pick a file smaller than ${
-          consts.MAX_ATTACHMENT_SIZE / 1000000
+          config.MAX_ATTACHMENT_SIZE / 1000000
         } MB.`
       );
       return;
