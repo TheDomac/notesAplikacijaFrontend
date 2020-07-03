@@ -69,7 +69,7 @@ export default function Home() {
   function renderNotes() {
     return (
       <div className="notes">
-        <PageHeader>Your Notes</PageHeader>
+        <PageHeader>My Notes</PageHeader>
         <ListGroup>
           {!isLoading && renderNotesList(notes)}
         </ListGroup>
