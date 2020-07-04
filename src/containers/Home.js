@@ -60,7 +60,7 @@ export default function Home() {
   function renderLander() {
     return (
       <div className="lander">
-        <h1>Scratch</h1>
+        <h1>My Notes</h1>
         <p>A simple note taking app</p>
       </div>
     );
@@ -71,6 +71,7 @@ export default function Home() {
       <div className="notes">
         <PageHeader>My Notes</PageHeader>
         <ListGroup>
+          {isLoading && "Loading..."}
           {!isLoading && renderNotesList(notes)}
         </ListGroup>
       </div>
