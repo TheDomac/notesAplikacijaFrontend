@@ -2,7 +2,7 @@
     STRIPE_KEY: "pk_test_51GzGqrLXhirpsqdUikowDeKIFNyhpsEw4IHDCPFwR8nM3Y3y0EuWvXDGctkebdZ8cdURRgsgQwsCG0RpWpikxDLB00s7ed5QM7",
     s3: {
       REGION: "us-east-1",
-      BUCKET: "notes-aplikacija-2-dev-serverlessdeploymentbucket-1onwhd0o3nimc"
+      BUCKET: "notes-aplikacija-2-dev-attachmentsbucket-7krjz3egp1v7"
     },
     apiGateway: {
       REGION: "us-east-1",
@@ -20,7 +20,7 @@
     STRIPE_KEY: "pk_test_51GzGqrLXhirpsqdUikowDeKIFNyhpsEw4IHDCPFwR8nM3Y3y0EuWvXDGctkebdZ8cdURRgsgQwsCG0RpWpikxDLB00s7ed5QM7",
     s3: {
       REGION: "us-east-1",
-      BUCKET: "notes-aplikacija-2-prod-serverlessdeploymentbucke-2tqev6oc5159"
+      BUCKET: "notes-aplikacija-2-prod-attachmentsbucket-jx144njmvyk0"
     },
     apiGateway: {
       REGION: "us-east-1",
